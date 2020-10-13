@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* SIDEBAR */
+.side_bar {
+  width: 20vw;
+  height: 90vh;
+  background-color: #000000;
+  position: relative;
+}
+
+.side_bar .logo img {
+  max-width: 55%;
+  margin: 1rem;
+}
+
+.side_bar a {
+  color: rgba(255,255,255, 0.5);
+  text-decoration: none;
+}
+
+.side_bar .nav_side,
+.side_bar .nav_side_bottom {
+  padding-left: 1rem;
+}
+
+.side_bar .nav_side ul {
+  list-style: none;
+}
+
+.side_bar .nav_side ul li {
+  line-height: 1.8rem;
+}
+
+.side_bar .nav_side ul li img {
+  width: 1.3rem;
+  vertical-align: middle;
+  filter: contrast(.1);
+  margin-right: 0.3rem;
+}
+
+.side_bar .nav_side ul li a {
+  font-size: 0.8rem;
+}
+
+.side_bar .nav_side .playlist {
+  margin-top: 1rem;
+}
+
+.side_bar .nav_side .playlist > h3 {
+  color: rgb(255,255,255);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.side_bar .nav_side .playlist .nav_side_square {
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  vertical-align: middle;
+  background-color: rgba(255,255,255, 0.5);
+  position: relative;
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+.side_bar .nav_side .playlist .nav_side_square span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.side_bar .nav_side .playlist ul li:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.side_bar .nav_side .playlist ul li:not(:first-of-type) a {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.side_bar .nav_side_bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+.side_bar .nav_side_bottom a {
+  font-size: 0.7rem;
+}
+
+.side_bar .nav_side_bottom img {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  vertical-align: middle;
+}
+
+.side_bar .nav_side_bottom img:last-of-type {
+  background-color: rgba(255,255,255, 0.5);
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border-radius: 100%;
+}
+
+.side_bar .nav_side_bottom a:last-of-type {
+  color: rgba(255,255,255, 1);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.side_bar .nav_side_bottom .hr {
+  height: 0.1rem;
+  background-color: rgba(255,255,255, 0.5);
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+
+/* MAIN */
+main {
+  width: 80vw;
+  height: 90vh;
+  background-color: #141922;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* UPGRADE */
+.upgrade {
+  width: 80vw;
+  height: 10vh;
+  background-color: #080B12;
+}
+
+/*NAV BAR*/
+
+/* RECENTLY PLAYED */
+
+/* CREATO PER */
+
+/* ARTISTI */
+
+/* MUSIC PLAYER */
+.music_player {
+  width: 100vw;
+  height: 10vh;
+  background-color: #282828;
+}
