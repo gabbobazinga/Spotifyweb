@@ -9,14 +9,18 @@ html {
   font-size: 16px;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* SIDEBAR */
 .side_bar {
-  width: 20vw;
-  max-width: 220px;
+  width: 200px;
   height: 90vh;
   background-color: #000000;
   position: relative;
-  z-index: 1;
 }
 
 .side_bar .logo img {
@@ -136,7 +140,7 @@ html {
 
 /* MAIN */
 main {
-  width: 100vw;
+  width: calc(100vw - 200px);
   height: 90vh;
   background-color: #141922;
   overflow-y: scroll;
@@ -148,14 +152,74 @@ main {
 
 /* UPGRADE */
 .upgrade {
-  width: 100vw;
-  height: 10vh;
+  width: calc(100vw - 200px);
+  height: 8vh;
   background-color: #080B12;
+  position: relative;
+}
+
+.upgrade .upgrade_button button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  margin-right: 2rem;
 }
 
 /*NAV BAR*/
+.nav_bar ul {
+  margin: 1rem 18%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_bar ul li a{
+  text-decoration: none;
+  color: rgba(255,255,255, 0.5);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
 
 /* RECENTLY PLAYED */
+.rec_played > h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  margin-left: 0.8rem;
+  color: white;
+}
+
+.rec_played .album_item {
+  float: left;
+  width: 15%;
+  text-align: center;
+  color: white;
+  margin-bottom: 1.8rem;
+  margin-left: calc(10% / 6);
+}
+
+.rec_played .album_item h4 {
+  margin-top: 0.4rem;
+}
+
+.rec_played .album_item span {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.rec_played .album_item img {
+  width: 100%;
+}
 
 /* CREATO PER */
 
