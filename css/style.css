@@ -6,14 +6,17 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 /* SIDEBAR */
 .side_bar {
   width: 20vw;
+  max-width: 220px;
   height: 90vh;
   background-color: #000000;
   position: relative;
+  z-index: 1;
 }
 
 .side_bar .logo img {
@@ -133,7 +136,7 @@ html {
 
 /* MAIN */
 main {
-  width: 80vw;
+  width: 100vw;
   height: 90vh;
   background-color: #141922;
   overflow-y: scroll;
@@ -145,7 +148,7 @@ main {
 
 /* UPGRADE */
 .upgrade {
-  width: 80vw;
+  width: 100vw;
   height: 10vh;
   background-color: #080B12;
 }
