@@ -18,7 +18,7 @@ html {
 /* SIDEBAR */
 .side_bar {
   width: 200px;
-  height: 90vh;
+  height: calc(100vh - 100px);
   background-color: #000000;
   position: relative;
 }
@@ -140,8 +140,8 @@ html {
 
 /* MAIN */
 main {
-  width: calc(100vw - 200px);
-  height: 90vh;
+  width: calc(100% - 200px);
+  height: calc(100% - 100px);
   background-color: #141922;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -152,8 +152,8 @@ main {
 
 /* UPGRADE */
 .upgrade {
-  width: calc(100vw - 200px);
-  height: 8vh;
+  width: 100%;
+  height: 80px;
   background-color: #080B12;
   position: relative;
 }
@@ -191,34 +191,63 @@ main {
   letter-spacing: 0.05rem;
 }
 
-/* RECENTLY PLAYED */
-.rec_played > h1 {
+/* Global ALbum property */
+.rec_played > h1,
+.creato_per > h1,
+.artisti > h1 {
   margin-top: 2rem;
-  margin-bottom: 1.8rem;
   margin-left: 0.8rem;
   color: white;
 }
 
-.rec_played .album_item {
-  float: left;
-  width: 15%;
+.creato_per > p,
+.artisti > p {
+  margin-left: 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;;
+  color: rgba(255,255,255, 0.5);
+}
+
+.item_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  margin-top: 1.2rem;
+  /* justify-content: space-around; */
+}
+
+.album_item {
+  width: calc(93% / 6);
+  height: auto;
+  min-width: 8rem;
   text-align: center;
   color: white;
   margin-bottom: 1.8rem;
-  margin-left: calc(10% / 6);
 }
 
-.rec_played .album_item h4 {
+.album_item:not(:last-child) {
+  margin-right: calc(7% / 6);
+}
+
+.album_item h4 {
   margin-top: 0.4rem;
 }
 
-.rec_played .album_item span {
+.album_item span {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.rec_played .album_item img {
+.album_item img {
   width: 100%;
+}
+
+.album_item_center img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 /* CREATO PER */
@@ -228,6 +257,6 @@ main {
 /* MUSIC PLAYER */
 .music_player {
   width: 100vw;
-  height: 10vh;
+  height: 100px;
   background-color: #282828;
 }
