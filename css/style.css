@@ -24,13 +24,19 @@ html {
   filter: none;
 }
 
-.side_bar .nav_side .playlist li:hover .nav_side_square {
-  background-color: rgba(255,255,255, 1);
+.side_bar .nav_side .playlist a:hover {
+  color: rgba(255,255,255, 1);
 }
 
 .nav_side_bottom a:hover {
   color: rgba(255,255,255, 1);
 }
+
+.side_bar .nav_side .playlist .nav_side_square:hover {
+  background-color: rgba(255,255,255, 1);
+}
+
+
 
 /* SIDEBAR */
 .side_bar {
@@ -83,7 +89,6 @@ html {
 
 .side_bar .nav_side > ul li:first-of-type {
   border-left: 2px solid white;
-
 }
 
 .side_bar .nav_side ul li img {
@@ -117,6 +122,7 @@ html {
   position: relative;
   display: inline-block;
   margin-right: 0.2rem;
+  margin-left: 1rem;
 }
 
 .side_bar .nav_side .playlist .nav_side_square span {
@@ -130,7 +136,7 @@ html {
 }
 
 .side_bar .nav_side .playlist ul li:first-of-type {
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .side_bar .nav_side .playlist ul li:not(:first-of-type) a {
