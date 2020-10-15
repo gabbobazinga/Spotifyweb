@@ -6,49 +6,74 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="side_bar">
-      <div class="logo">
-        <img src="img\logo.svg" alt="">
-      </div>
-      <div class="nav_side">
-        <ul>
-          <li>
-            <a href="#"><img src="img/home.svg" alt="">Home</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/search.svg" alt="">Cerca</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a>
-          </li>
-        </ul>
-        <div class="playlist">
-          <h3>playlist</h3>
-          <a href="#">
-            <div class="nav_side_square">
-              <span>+</span>
-            </div>
-          </a>
-          <a href="#">Crea Playlist</a>
+      <div class="display_sm_none">
+        <div class="logo">
+          <img src="img\logo.svg" alt="">
+        </div>
+        <div class="nav_side">
           <ul>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
+            <li>
+              <a href="#"><img src="img/home.svg" alt="">Home</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/search.svg" alt="">Cerca</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a>
+            </li>
           </ul>
+          <div class="playlist">
+            <h3>playlist</h3>
+            <a href="#">
+              <div class="nav_side_square">
+                <span>+</span>
+              </div>
+            </a>
+            <a href="#">Crea Playlist</a>
+            <ul>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_side_bottom">
+          <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+          <a href="">Installa app</a>
+          <div class="hr"></div>
+          <img src="img/profile.svg" alt="">
+          <a href="">Jhon Doe</a>
         </div>
       </div>
-      <div class="nav_side_bottom">
-        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-        <a href="">Installa app</a>
-        <div class="hr"></div>
-        <img src="img/profile.svg" alt="">
-        <a href="">Jhon Doe</a>
+      <div class="display_sm_on">
+        <div class="top_display">
+          <ul>
+            <li>
+              <a href="#"><img src="img/logo-small.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/search.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/libreria.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_side_bottom">
+          <a href=""><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+          <a href=""><img src="img/profile.svg" alt=""></a>
+        </div>
       </div>
     </div>
     <main>
@@ -59,7 +84,7 @@
       </section>
       <section class="nav_bar">
         <ul>
-          <li><a href="#">in evidenza</a></li>
+          <li class="p-rel"><a href="#">in evidenza</a></li>
           <li><a href="#">podcast</a></li>
           <li><a href="#">classifiche</a></li>
           <li><a href="#">generi e mood</a></li>
@@ -73,6 +98,9 @@
           <div class="album_item">
             <div>
               <img src="img/metal_lifting.jpg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Heavy Metal</h4>
             <span>Subtitle</span>
@@ -80,6 +108,9 @@
           <div class="album_item">
             <div>
               <img src="img/stranger.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Stranger Things, Vol. 1(a Neflix Original Series Soundtrack)</h4>
             <span>Kyle Dixon & Michael Stein</span>
@@ -87,6 +118,9 @@
           <div class="album_item">
             <div>
               <img src="img/aquietplace.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>A quiet place</h4>
             <span>Subtitle</span>
@@ -94,6 +128,9 @@
           <div class="album_item">
             <div>
               <img src="img/split.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Split</h4>
             <span>Subtitle</span>
@@ -101,6 +138,9 @@
           <div class="album_item">
             <div>
               <img src="img/cure.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>A cure for weliness</h4>
             <span>Subtitle</span>
@@ -108,6 +148,9 @@
           <div class="album_item">
             <div>
               <img src="img/sinister.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Sinister</h4>
             <span>Subtitle</span>
@@ -121,12 +164,18 @@
           <div class="album_item">
             <div>
               <img src="img/radar.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Release Radar</h4>
           </div>
           <div class="album_item">
             <div>
               <img src="img/mixdaily.jpeg" alt="">
+              <div class="overlay">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Daily Mix 1</h4>
           </div>
@@ -137,14 +186,20 @@
         <p>Più ascolti, più accurati saranno i suggerimenti.</p>
         <div class="item_list">
           <div class="album_item">
-            <div class="album_item_center">
+            <div class="album_item_circle">
               <img src="img/youg.jpeg" alt="">
+              <div class="overlay overlay_circle">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Lana Del Rey</h4>
           </div>
           <div class="album_item">
-            <div class="album_item_center">
+            <div class="album_item_circle">
               <img src="img/einaudi.jpeg" alt="">
+              <div class="overlay overlay_circle">
+                <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+              </div>
             </div>
             <h4>Einaudi</h4>
           </div>
